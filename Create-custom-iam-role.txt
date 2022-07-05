@@ -1,0 +1,6 @@
+create custome policy
+1st step : Service:- youneed to shoosece which service you want to give enable to spesific role.
+2nd step: Actions:- you need to select which action he can perform like(read, write, edit)
+3rd step: resources:- we need to select which resources he can use
+4th step: request condition:- if we want secure access like mfa or secure ip 
+then preview policy and create policy

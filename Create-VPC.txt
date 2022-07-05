@@ -1,0 +1,13 @@
+1) create VPC and create subnate (enable public ip in public subnets)
+2) create 2 route table
+3) create internet gateway and connect public subnet via one route table
+4) create natgateway (use another route table to connect internet to private subnet)(nat gateway elastic ip and private ip)
+5) create 2 NACL
+
+step by step
+create vpc
+create subnets-- enable public ip 2 publicsn -- select sn --goto edit sn settings--enable autoasign public ip
+create internetgateway--atache to myvpc
+create internet route table-- select vpc -- save, ad goto subnet associations add public subnet-- goto the routes--add interentgateway
+create nat gateway--select any public sn- allocate elastic ip-- create natgateway
+goto routetable-create or use defaultrote table for nat raoute table-- goto subnet association and selct private subnet. and gote routes -- select natgateway--save
